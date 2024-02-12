@@ -53,23 +53,23 @@ body {
 }
 
 .texto__primeira_parte {
-    color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
     font-size: 1rem;
 }
 
 .texto__destaque__1 {
-    color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
     font-size: 3.75rem;
 }
 
 .texto__segunda_parte {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--cor-secundaria);
 }
 
 .texto__destaque__2 {
     color: var(--cor-terciaria);
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: capitalize;
 }
 
@@ -80,7 +80,15 @@ body {
 }
 
 .apresentacao__sobre {
-    font-size: 12px;
+    padding-left: 5%;
+    padding-right: 20%;
+    font-size: 1rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__boasvindas {
+    font-size: 2.5rem;
+    color: var(--cor-secundaria);
 }
 
 .apresentacao__imagem {
@@ -96,9 +104,11 @@ body {
 }
 
 .apresentacao__conteudo__paragrafo1 {
-    padding-left: 5%;
     font-size: 1.5rem;
-    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__lista {
+    list-style-type: none;
 }
 
 .titulo__destaque {
