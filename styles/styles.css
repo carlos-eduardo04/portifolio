@@ -13,6 +13,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -20,10 +21,14 @@ body {
     box-sizing: border-box;
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
+    background-image: url(/assets/Fundo\ Xadrez.jpg);
+    background-position: center;
+
 }
 
+/* COMEÇO CABEÇALHO */
 .cabecalho {
-    padding: 2% 0% 0% 15%;
+    padding: 2% 0% 0% 0%;
 }
 
 .cabecalho__menu {
@@ -40,6 +45,9 @@ body {
     text-decoration: none;
 }
 
+/* FIM CABEÇALHO */
+
+/* COMEÇO APRESENTAÇÃO */
 .container {
     display: flex;
     height: 100vh;
@@ -52,96 +60,78 @@ body {
     flex-direction: column;
 }
 
-.texto__primeira_parte {
+.apresentacao__primeiro__texto {
     color: var(--cor-terciaria);
     font-size: 1rem;
 }
 
-.texto__destaque__1 {
+.apresentacao__primeiro__destaque {
     color: var(--cor-secundaria);
     font-size: 3.75rem;
 }
 
-.texto__segunda_parte {
+.apresentacao__segundo__texto {
     font-size: 1.5rem;
     color: var(--cor-secundaria);
 }
 
-.texto__destaque__2 {
+.apresentacao__segundo__destaque {
     color: var(--cor-terciaria);
     font-size: 1.5rem;
     text-transform: capitalize;
 }
 
+/* FIM APRESENTAÇÃO */
 
-.apresentacao__conteudo {
+/* SEGUNDA SECTION */
+.container__grid {
     display: grid;
     grid-template-columns: 50% 50%;
+    height: 100vh;
 }
 
-.apresentacao__sobre {
-    padding-left: 5%;
-    padding-right: 20%;
-    font-size: 1rem;
+.resumo {
     font-family: var(--fonte-secundaria);
+
 }
 
-.apresentacao__inicio {
-    padding: 5% 0;
-}
-
-.apresentacao__boasvindas {
-    font-size: 2.5rem;
-    color: var(--cor-secundaria);
-}
-
-.apresentacao__imagem {
+.resumo__imagem {
+    align-self: center;
     justify-self: end;
     height: 60%;
 }
 
 
-.apresentacao__conteudo__titulo {
-    font-size: 2.25rem;
-    font-family: var(--fonte-primaria);
-    text-align: center;
+.resumo__sobre {
+    padding: 18em 22em 0em 2em;
 }
 
-.apresentacao__conteudo__paragrafo1 {
-    font-size: 1.3rem;
-    padding-top: 5%;
+.resumo__sobre__titulo {
+    font-size: 2.5rem;
 }
 
-.apresentacao__lista {
+.resumo__sobre__texto {}
+
+.resumo__lista {
     display: flex;
+    padding: 1.5em 0;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     list-style-type: none;
 }
 
-.lista__elementos {
-    display: flex;
-    align-items: center;
+.resumo__lista__texto {
+    font-size: 1.5rem;
 }
 
-.titulo__destaque {
-    color: var(--cor-terciaria);
-}
+/* FIM RESUMO */
 
 .apresentacao__conteudo__links {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 32px;
-}
-
-.apresentacao__conteudo__subtitulo {
-    font-family: var(--fonte-primaria);
-    font-weight: 400;
-    font-size: 1.5rem;
-    color: var(--cor-secundaria);
-
 }
 
 .link__navegacao {
@@ -165,6 +155,104 @@ body {
     background-color: var(--cor-hover)
 }
 
+.apresentacao__contato {
+    color: var(--cor-secundaria);
+}
+
+.apresentacao__contato__titulo {
+    font-family: var(--fonte-primaria);
+    font-size: 2rem;
+    color: var(--cor-secundaria);
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    padding-top: 4%;
+    padding-bottom: 2%;
+}
+
+
+.formulario__input {
+    display: flex;
+    flex-direction: column;
+    width: 20em;
+    padding: 10%;
+    font-size: 1.5rem;
+}
+
+textarea {
+    background: var(--cor-hover);
+    width: 385px;
+}
+
+input {
+    background: var(--cor-hover);
+    width: 385px;
+    height: 35px;
+}
+
+.formulario__enviar {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: var(--cor-terciaria);
+    border: 0;
+    width: 150px;
+    height: 50px;
+    margin-bottom: 3%;
+    font-size: 1.2rem;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-secundaria);
+    cursor: pointer;
+}
+
+/* COMEÇO SOBRE MIM */
+
+.sobre {}
+
+.sobre__conteudo {}
+
+.sobre__imagem {}
+
+.sobre__paragrafo {
+    padding: 16em 0em 0em 2em
+}
+
+/* COMEÇO TORNEIOS */
+.torneios__titulo {
+    padding: 6% 0% 4% 0%;
+    color: var(--cor-secundaria);
+    font-size: var(--fonte-primaria);
+    font-size: 6rem;
+    display: flex;
+    justify-content: center;
+}
+
+.torneios__texto {
+    display: flex;
+    justify-content: center;
+    padding: 2% 0%;
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.torneios__conteudo {
+    display: flex;
+    justify-content: center;
+    padding: 0%
+}
+
+.torneios__conteudo__video {
+    padding: 0% 5%;
+}
+
+/* FIM TORNEIOS */
+
+/* COMEÇO RODAPÉ */
 .rodape {
     display: flex;
     align-items: center;
@@ -178,6 +266,9 @@ body {
     font-weight: 400;
 }
 
+/* FIM RODAPÉ */
+
+/* COMEÇO MEDIA QUERY */
 @media (max-width: 1200px) {
     .cabecalho {
         padding: 10%;
@@ -197,7 +288,7 @@ body {
     }
 
     .link__navegacao {
-        font-size: 1, 5rem;
+        font-size: 1.5rem;
         gap: 10px;
         width: auto;
     }
@@ -211,4 +302,6 @@ body {
         font-size: 1.125rem;
         padding: 26px 0px;
     }
+
+    /* FIM MEDIA QUERY */
 }
